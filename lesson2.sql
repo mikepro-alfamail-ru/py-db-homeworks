@@ -1,24 +1,24 @@
 CREATE TABLE Gengres (
 id SERIAL PRIMARY KEY,
-Name varchar(255)
+Name varchar(50)
 );
 
 CREATE TABLE Performers (
 id SERIAL PRIMARY KEY,
-genreid int REFERENCES Gengres(id),
-Name varchar(255)
+genreid integer REFERENCES Gengres(id),
+Name varchar(100)
 );
 
 CREATE TABLE Albums (
 id SERIAL PRIMARY KEY,
-performerid int REFERENCES Performers(id),
+performerid integer REFERENCES Performers(id),
 Title varchar(255),
 Year int
 );
 
 CREATE TABLE Tracks (
 id SERIAL PRIMARY KEY,
-albumid int REFERENCES Albums(id),
+albumid integer REFERENCES Albums(id),
 Tite varchar(255),
-Duration int
+Duration integer
 );
