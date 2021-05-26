@@ -38,6 +38,7 @@ select
 from performers
 where 
 	position(' ' in "name") = 0;
+-- ну или "name" not like '% %';
 
 -- 6
 select 
