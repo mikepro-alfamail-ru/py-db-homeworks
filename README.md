@@ -21,4 +21,4 @@
 [SQL file](L3/lesson3_adv.sql)
 
 ## Lesson 4
-[All files](/4)
+[All files](/L4)
