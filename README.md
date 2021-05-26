@@ -2,23 +2,23 @@
 
 ## Lesson 1
 
-[PNG picture](lesson1.png)
+[PNG picture](L1/lesson1.png)
 
 ## Lesson 2
 
-[SQL file](lesson2.sql)
+[SQL file](L2/lesson2.sql)
 
 ## Lesson 3
 
-[PNG picture](lesson3.png)
+[PNG picture](L3/lesson3.png)
 
-[SQL file](lesson3.sql)
+[SQL file](L3/lesson3.sql)
 
 ### Advanced task
 
-[PNG picture](lesson3_adv.png)
+[PNG picture](L3/lesson3_adv.png)
 
-[SQL file](lesson3_adv.sql)
+[SQL file](L3/lesson3_adv.sql)
 
 ## Lesson 4
 [All files](/4)
