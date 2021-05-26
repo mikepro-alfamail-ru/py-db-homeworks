@@ -1,7 +1,7 @@
 # Lesson 4 homework
 
-[Requests 1](1.sql)
+[Создание таблиц](1.sql)
 
-[Requests 2](2.sql)
+[Заполнение данными](2.sql)
 
-[Requests 3](3.sql)
+[Выборки из БД](3.sql)
