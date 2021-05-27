@@ -29,6 +29,7 @@ group by a.id, a.title;
 -- 4 все исполнители, которые не выпустили альбомы в 2020 году;
 
 -- У меня в базе такие все, так что позволю себе поменять задание на 1968 год -)
+/* Сначала хотел сделать так, но потом вспомнил про except
 select
 	perf."name"
 from performers perf
@@ -40,7 +41,18 @@ left join
 	inner join albums a on a.id = pa.albumid 
 	where a."year" = 1968) sq on perf.id = sq.id_sq
 where sq.id_sq is null;
+*/
 
+select
+	perf."name"
+from performers perf
+except
+select 
+	p."name" 
+from performers p 
+inner join performersalbums pa on p.id = pa.performerid 
+inner join albums a on a.id = pa.albumid 
+where a."year" = 1968;
 
 -- 5 названия сборников, в которых присутствует конкретный исполнитель (выберите сами);
 select 
