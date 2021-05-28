@@ -7,7 +7,7 @@ select
 from 
 	performersgengres p
 inner join gengres g on p.gengreid = g.id
-group by p.gengreid, g.name;
+group by g.id;
 
 
 -- 2 количество треков, вошедших в альбомы 2019-2020 годов;
@@ -24,7 +24,7 @@ select
 	round(avg(t.duration) / 60 ::dec, 2) "Средняя продолжительность, мин"	
 from tracks t 
 inner join albums a on t.albumid = a.id 
-group by a.id, a.title;
+group by a.id;
 
 -- 4 все исполнители, которые не выпустили альбомы в 2020 году;
 
