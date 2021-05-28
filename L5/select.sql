@@ -102,7 +102,7 @@ from performers p
 inner join performersalbums pa on p.id = pa.performerid 
 inner join tracks t on t.albumid = pa.albumid  
 where
-	t.duration in (select min(t2.duration) from tracks t2)
+	t.duration = (select min(t2.duration) from tracks t2)
 
 
 -- 9 название альбомов, содержащих наименьшее количество треков.
@@ -118,7 +118,7 @@ inner join
 		group by t2.albumid 
 	) q1 on a.id = q1.albumid2
 where 
-	q1.trcount in (
+	q1.trcount = (
 		select min(q2.trcount1) from
 			(
 				select count(t.id) trcount1
